@@ -1,0 +1,396 @@
+@charset "UTF-8";
+/*폰트*/
+@font-face {
+  font-family: 'Neuzeit Grotesk';
+  src: url("NeuzeitGro-Bla.eot");
+  src: url("NeuzeitGro-Bla.ttf");
+  src: local("Neuzeit Grotesk Black"), local("NeuzeitGro-Bla"), url("NeuzeitGro-Bla.eot?#iefix") format("embedded-opentype"), url("NeuzeitGro-Bla.woff2") format("woff2"), url("NeuzeitGro-Bla.woff") format("woff"), url("NeuzeitGro-Bla.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal; }
+@font-face {
+  font-family: 'Neuzeit-Grotesk';
+  src: url("NeuzeitGro-Reg.eot");
+  src: local("Neuzeit Grotesk Regular"), local("NeuzeitGro-Reg"), url("NeuzeitGro-Reg.eot?#iefix") format("embedded-opentype"), url("NeuzeitGro-Reg.woff2") format("woff2"), url("NeuzeitGro-Reg.woff") format("woff"), url("NeuzeitGro-Reg.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Neuzeit-Grotesk1';
+  src: url("NeuzeitGro-Bol.eot");
+  src: local("Neuzeit Grotesk Bold"), local("NeuzeitGro-Bol"), url("NeuzeitGro-Bol.eot?#iefix") format("embedded-opentype"), url("NeuzeitGro-Bol.woff2") format("woff2"), url("NeuzeitGro-Bol.woff") format("woff"), url("NeuzeitGro-Bol.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'Neuzeit-Grotesk2';
+  src: url("NeuzeitGro-Lig.eot");
+  src: local("Neuzeit Grotesk Light"), local("NeuzeitGro-Lig"), url("NeuzeitGro-Lig.eot?#iefix") format("embedded-opentype"), url("NeuzeitGro-Lig.woff2") format("woff2"), url("NeuzeitGro-Lig.woff") format("woff"), url("NeuzeitGro-Lig.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+/*변수지정*/
+* {
+  margin: 0;
+  padding: 0; }
+
+.container {
+  max-width: 1320px;
+  padding: 0 60px;
+  /* background:rgba(0,77,102,0.3); */
+  height: inherit;
+  margin: 0 auto; }
+
+/*mixin*/
+/*header*/
+#scroll-top-menu {
+  width: 100%;
+  background: #fff;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  z-index: 99999;
+  display: none; }
+  #scroll-top-menu .titleText1 {
+    font-family: "Neuzeit Grotesk"; }
+    #scroll-top-menu .titleText1 h6 {
+      font-size: 20px;
+      margin-top: 30px;
+      float: left; }
+  #scroll-top-menu .prize2 {
+    position: relative;
+    height: 8px; }
+    #scroll-top-menu .prize2 .prizetxt2 {
+      float: right;
+      margin-top: 30px; }
+      #scroll-top-menu .prize2 .prizetxt2 .prize-top {
+        font-family: "Neuzeit-Grotesk1";
+        font-size: 22px;
+        letter-spacing: -0.4px;
+        float: left;
+        min-height: 45px; }
+      #scroll-top-menu .prize2 .prizetxt2 button {
+        background: #161616;
+        border-radius: 80px;
+        border: 0;
+        padding: 10px 25px;
+        color: #fff;
+        margin-left: 21px; }
+      #scroll-top-menu .prize2 .prizetxt2 span {
+        font-size: 18px;
+        padding-left: 1px; }
+      #scroll-top-menu .prize2 .prizetxt2 i {
+        font-size: 21px; }
+
+#header {
+  width: 100%;
+  height: 80px; }
+
+.logo {
+  padding-top: 21px;
+  float: left; }
+  .logo img {
+    width: 40px; }
+
+.underline:after {
+  content: "";
+  height: 2px;
+  display: none;
+  background: #ff0080;
+  width: 40px;
+  margin-left: 50px;
+  margin-top: 10px; }
+
+.searchBtn {
+  float: right;
+  padding-top: 30px;
+  padding-right: 0px; }
+
+#nav {
+  text-align: center;
+  margin-right: 60px;
+  padding-top: 30px; }
+  #nav ul {
+    overflow: hidden;
+    display: inline-block; }
+    #nav ul li {
+      float: left;
+      width: 140px;
+      list-style: none; }
+      #nav ul li a {
+        color: #161616;
+        font-size: 18px;
+        text-decoration: none; }
+
+#nav ul li .underline:hover:after {
+  display: block; }
+
+/*section 1*/
+#section1 {
+  width: 100%; }
+
+.titleText {
+  overflow: hidden;
+  width: 607px; }
+
+h1 {
+  font-family: "Neuzeit Grotesk";
+  text-transform: uppercase;
+  font-size: 129px;
+  padding-top: 41px;
+  line-height: .8;
+  letter-spacing: -.8px;
+  color: #161616; }
+
+.prize {
+  position: relative;
+  height: 8px; }
+  .prize .prizetxt {
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    margin-top: 15px; }
+    .prize .prizetxt .prize1 {
+      font-family: "Neuzeit-Grotesk1";
+      font-size: 22px;
+      letter-spacing: -0.4px;
+      float: left;
+      line-height: 45px; }
+    .prize .prizetxt button {
+      background: #161616;
+      border-radius: 80px;
+      border: 0;
+      padding: 10px 25px;
+      color: #fff;
+      margin-left: 21px; }
+      .prize .prizetxt button span {
+        font-size: 18px;
+        padding-left: 1px; }
+        .prize .prizetxt button span i {
+          font-size: 21px; }
+
+.mainBanner {
+  text-align: center;
+  padding-top: 40px; }
+
+/*section2*/
+#section2 {
+  height: inherit; }
+
+.color {
+  padding-top: 52px;
+  padding-bottom: 70px; }
+
+.color > p {
+  font-size: 20px;
+  font-weight: bold;
+  float: left; }
+
+.color ul {
+  position: relative; }
+
+.color li.circle1 {
+  background: url(./images/circle1.png) no-repeat; }
+
+.color li.circle2 {
+  background: url(./images/circle2.png) no-repeat; }
+
+.color li.circle3 {
+  background: url(./images/circle3.png) no-repeat; }
+
+.color ul li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 86px;
+  width: 32px;
+  height: 32px;
+  list-style: none; }
+
+.color ul li.circle1 {
+  left: 20px; }
+
+.color ul li.circle2 {
+  left: 40px; }
+
+.color ul li.circle3 {
+  left: 60px; }
+
+.content1 h2 {
+  font-size: 36px;
+  font-family: "Neuzeit Grotesk";
+  padding: 0 4.3% 10px 25%;
+  margin-bottom: 40px;
+  letter-spacing: -1.5px; }
+
+.contents_wrap {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(334px, 1fr));
+  grid-gap: 50px 62px;
+  font-size: 20px;
+  padding: 0 4.3% 10px 25%;
+  padding-bottom: 56px; }
+  .contents_wrap h3 {
+    font-family: "Neuzeit Grotesk";
+    margin-bottom: 1px; }
+    .contents_wrap h3 p {
+      line-height: 30px;
+      letter-spacing: -0.2px; }
+
+.cont_div1 {
+  margin-top: 40px;
+  color: #161616; }
+
+.content2 .popup {
+  padding: 30px;
+  position: absolute;
+  background: white;
+  width: 360px;
+  height: 112px; }
+  .content2 .popup h2 {
+    color: rgba(0, 0, 0, 0); }
+
+.downico i {
+  border: 1px solid #ddd;
+  border-radius: 100%;
+  padding: 4px 5px;
+  color: #222222;
+  font-size: 15px; }
+
+h4 {
+  font-size: 20px;
+  padding-bottom: 50px;
+  color: #161616;
+  padding: 0 4.3% 10px 25%; }
+
+h5 {
+  float: left;
+  margin-right: 50px;
+  font-size: 20px;
+  width: 270px;
+  height: 139px;
+  font-family: "Neuzeit-Grotesk2";
+  font-weight: 300; }
+
+h5:nth-child(2) {
+  margin-left: 10px; }
+
+.list_wrap {
+  display: none;
+  padding: 0 4.3% 0 25%;
+  margin-top: 50px; }
+
+.list {
+  text-align: left;
+  font-size: 20px;
+  margin-bottom: 32px; }
+
+.list li {
+  line-height: 160%;
+  margin-bottom: 10px;
+  letter-spacing: -1.3px;
+  color: #161616; }
+
+.rotate {
+  transform: rotate(180deg); }
+
+.mainbanner2 {
+  text-align: center; }
+
+/*section3*/
+#section3 {
+  text-align: center;
+  position: relative; }
+  #section3 .img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    list-style: none; }
+    #section3 .img img {
+      width: 1440px;
+      height: 810px; }
+
+#section3 .tab-txt {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 1em; }
+
+.caption {
+  font-size: 12px;
+  color: gray;
+  text-align: left;
+  line-height: 1.5;
+  margin-bottom: 1em; }
+
+.tab-img {
+  overflow: hidden;
+  display: inline-block; }
+
+.tab-color {
+  float: left;
+  margin-top: 850px;
+  margin-left: 20px;
+  list-style: none;
+  border: 3px solid #fff; }
+
+.ivory {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #e4deda; }
+
+.black {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #1a1a1a; }
+
+.gray {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #cec5c1; }
+
+.headerOn {
+  display: block; }
+
+#footer {
+  background: #fff;
+  height: 634px;
+  padding-top: 90px; }
+
+#footer .logo {
+  width: 378px;
+  padding: 0;
+  margin-left: 195px; }
+
+#footer .foot-list {
+  float: left;
+  margin-top: 30px;
+  display: block;
+  margin-bottom: 50px; }
+  #footer .foot-list h2 {
+    font-size: 20px;
+    margin-bottom: 20px; }
+  #footer .foot-list li {
+    margin-bottom: 18px;
+    list-style: none;
+    font-family: "Neuzeit-Grotesk1";
+    color: #626262;
+    letter-spacing: -1px;
+    width: 250px; }
+
+#footer p {
+  text-align: center;
+  margin: 50px 0 60px 0;
+  clear: both;
+  font-size: 12px;
+  color: #ddd; }
+
+#footer .foot-list span:hover {
+  padding-bottom: 1px;
+  border-bottom: 1px solid #ddd; }
+
+#footer .foot-list:nth-child(6) {
+  display: block; }
+
+#footer .foot-list:nth-child(4) {
+  margin-top: 30px; }
